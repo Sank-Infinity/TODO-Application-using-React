@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+h1 {
+    color: blueviolet;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.add-task {
+    height: 10vh;
+    width: 100vw;
+    border: 2px solid blue;
+}
+
+.add-task form {
+    padding: 10px;
+    height: 100%;
+    width: 30%;
+    margin: 0px auto;
+}
+
+.add-task form input{
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.add-task form input[type=button] {
+    cursor: pointer;
+}
+
+.add-task form input[type=button]:hover {
+    background-color: greenyellow;
+    padding: 10.5px;
+}
+
+.task-lists {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width:  100vw;
+    border: 2px solid green;
+}
+
+.task-lists .todo {
+    margin: 1px;
+    height: 100%;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.task-lists .finished {
+    margin: 1px;
+    height: 100%;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.task-lists ul li * {
+    margin: 5px;
+}
+
+.task-lists .list-container {
+    height: 70%;
+    width: 50%;
+    background-color: aquamarine;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+.task-lists .list-container .title {
+    background-color: teal;
+    height: 10%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.task-lists .list-container .content {
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    list-style: none;
+    font-size: 20px;
+    /* padding: 5px 10px; */
+}
+
+.task-lists .list-container .content div {
+    height: 40px;
+    background-color: aqua;
+    border-bottom: 1px solid teal;
+    padding: 10px 10px;
+}
+
+.task-lists .list-container .content div span {
+    margin: 0px 20px;
+}
+
+.task-lists .list-container .content div span button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
 }
